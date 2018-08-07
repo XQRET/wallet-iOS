@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Hd-7G-1yh">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Receivables Controller-->
+        <scene sceneID="zoO-tf-hc8">
+            <objects>
+                <viewController id="0Hd-7G-1yh" customClass="ReceivablesController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRN-TE-R2q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_130_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VOy-2e-KX9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="FPh-O7-jI7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0c-t3-Dnh">
+                                <rect key="frame" x="16" y="79.999999999999972" width="382" height="444.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token钱包地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCJ-2h-DHj">
+                                        <rect key="frame" x="16" y="20.000000000000004" width="122" height="42.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receivables_code" translatesAutoresizingMaskIntoConstraints="NO" id="MDk-hj-XjX">
+                                        <rect key="frame" x="50" y="98.333333333333343" width="282" height="282"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MDk-hj-XjX" secondAttribute="height" multiplier="1:1" id="Byg-Fl-EE3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0xgiw893gh29hv9wg93h278fg28f73f832gf78g3vh23982832gf78g3vh23982832gf78g3vh23982" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uyd-CG-1gx">
+                                        <rect key="frame" x="20" y="392.33333333333331" width="342" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TPt-I1-2oO"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Uyd-CG-1gx" secondAttribute="bottom" constant="12" id="37E-52-LUv"/>
+                                    <constraint firstAttribute="width" secondItem="Z0c-t3-Dnh" secondAttribute="height" multiplier="86:100" id="Brm-mM-noi"/>
+                                    <constraint firstItem="Uyd-CG-1gx" firstAttribute="leading" secondItem="Z0c-t3-Dnh" secondAttribute="leading" constant="20" id="FGo-aB-NWG"/>
+                                    <constraint firstItem="fCJ-2h-DHj" firstAttribute="leading" secondItem="Z0c-t3-Dnh" secondAttribute="leading" constant="16" id="LrZ-lr-NKo"/>
+                                    <constraint firstAttribute="trailing" secondItem="MDk-hj-XjX" secondAttribute="trailing" constant="50" id="Zx3-uU-N7c"/>
+                                    <constraint firstItem="MDk-hj-XjX" firstAttribute="top" secondItem="fCJ-2h-DHj" secondAttribute="bottom" constant="36" id="am6-1N-avT"/>
+                                    <constraint firstItem="MDk-hj-XjX" firstAttribute="leading" secondItem="Z0c-t3-Dnh" secondAttribute="leading" constant="50" id="rt5-n7-QzJ"/>
+                                    <constraint firstItem="Uyd-CG-1gx" firstAttribute="top" secondItem="MDk-hj-XjX" secondAttribute="bottom" constant="12" id="uI1-oj-4yh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uyd-CG-1gx" secondAttribute="trailing" constant="20" id="vDt-Uq-akj"/>
+                                    <constraint firstItem="fCJ-2h-DHj" firstAttribute="top" secondItem="Z0c-t3-Dnh" secondAttribute="top" constant="20" id="zFo-Gz-9P7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-37-NfX">
+                                <rect key="frame" x="32" y="584.33333333333337" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="oN6-78-vo7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title=" 复制钱包地址" backgroundImage="details_but"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VOy-2e-KX9" firstAttribute="top" secondItem="VRN-TE-R2q" secondAttribute="top" id="1CA-96-uFa"/>
+                            <constraint firstItem="Z0c-t3-Dnh" firstAttribute="top" secondItem="2Wz-5k-fWD" secondAttribute="top" constant="60" id="8em-Vo-SzC"/>
+                            <constraint firstItem="VOy-2e-KX9" firstAttribute="leading" secondItem="2Wz-5k-fWD" secondAttribute="leading" id="C7k-ia-igc"/>
+                            <constraint firstItem="2Wz-5k-fWD" firstAttribute="trailing" secondItem="cdk-37-NfX" secondAttribute="trailing" constant="32" id="bW8-sr-Qit"/>
+                            <constraint firstItem="Z0c-t3-Dnh" firstAttribute="leading" secondItem="2Wz-5k-fWD" secondAttribute="leading" constant="16" id="fXt-ma-rwV"/>
+                            <constraint firstItem="2Wz-5k-fWD" firstAttribute="trailing" secondItem="Z0c-t3-Dnh" secondAttribute="trailing" constant="16" id="str-4e-zG5"/>
+                            <constraint firstItem="cdk-37-NfX" firstAttribute="top" secondItem="Z0c-t3-Dnh" secondAttribute="bottom" constant="60" id="tBL-r8-mUZ"/>
+                            <constraint firstItem="cdk-37-NfX" firstAttribute="leading" secondItem="2Wz-5k-fWD" secondAttribute="leading" constant="32" id="v5e-xJ-Xzq"/>
+                            <constraint firstItem="VOy-2e-KX9" firstAttribute="trailing" secondItem="2Wz-5k-fWD" secondAttribute="trailing" id="wuX-sw-kuk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Wz-5k-fWD"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="Z0c-t3-Dnh" id="kPe-Bx-LUD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKm-py-ZuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.82608695652175" y="-316.304347826087"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="details_but" width="345" height="48"/>
+        <image name="nav_130_bg" width="375" height="129"/>
+        <image name="receivables_code" width="230" height="230"/>
+    </resources>
+</document>

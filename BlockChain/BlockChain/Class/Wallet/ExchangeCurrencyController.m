@@ -1,0 +1,54 @@
+//
+//  ExchangeCurrencyController.m
+//  BlockChain
+//
+//  Created by nbs on 2018/7/30.
+//  Copyright © 2018年 cn.nbs.block-chain. All rights reserved.
+//
+
+#import "ExchangeCurrencyController.h"
+
+@interface ExchangeCurrencyController ()
+@property (weak, nonatomic) IBOutlet UIView *selectView1;
+@property (weak, nonatomic) IBOutlet UIView *selectView2;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectViewHeightConstraint1;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectViewHeightConstraint2;
+
+@property (nonatomic, strong) WRCustomNavigationBar *customNavBar;
+@end
+
+@implementation ExchangeCurrencyController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setupNavBar];
+    
+    [_selectView1.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
+    _selectView1.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView1.layer.borderWidth = 1;
+    _selectView1.hidden = YES;
+    
+    [_selectView2.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
+    _selectView2.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView2.layer.borderWidth = 1;
+    _selectView2.hidden = YES;
+
+}
+
+- (void)setupNavBar {
+    self.customNavBar = [WRCustomNavigationBar CustomNavigationBar];
+    [self.view addSubview:self.customNavBar];
+    self.customNavBar.title = @"换币";
+    self.customNavBar.titleLabelColor = [UIColor whiteColor];
+    self.customNavBar.barBackgroundImage = [UIImage imageNamed:@"nav_bar_bg"];
+    [self.customNavBar wr_setBottomLineHidden:YES];
+    [self.customNavBar wr_setLeftButtonWithImage:[UIImage imageNamed:@"nav_banck_white"]];
+    [self.customNavBar updateFrame];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+}
+
+@end

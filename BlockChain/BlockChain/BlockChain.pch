@@ -1,0 +1,112 @@
+//
+//  BlockChain.pch
+//  BlockChain
+//
+//  Created by nbs on 2018/4/11.
+//  Copyright © 2018年 cn.nbs.block-chain. All rights reserved.
+//
+
+#ifndef BlockChain.pch
+#define BlockChain.pch
+
+// 0.弱引用/强引用
+#define kWeakSelf(type) __weak typeof(type) weak##type = type;
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
+// 1.获得颜色
+#define kHexColor(c) [UIColor colorWithRed:((float)((c & 0xFF0000) >> 16))/255.0 green:((float)((c & 0xFF00) >> 8))/255.0 blue:((float)(c & 0xFF))/255.0 alpha:1.0f]
+
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define kRGB(r, g, b) RGBA(r, g, b, 1.0f)
+
+#define kMainColor kHexColor(0xff9600)
+
+// 2.屏幕尺寸
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#define kStatusBarHeight [[UIApplication sharedApplication]                                                 BarFrame].size.height
+#define kNavigationViewHeight (SCREEN_HEIGHT - 64)
+#define kTabNavViewHeight (kNavigationViewHeight - 44)
+
+// 3.常用对象
+#define kApplication [UIApplication sharedApplication]
+#define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+
+// 4.获取常用
+//APP版本号
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//系统版本号
+#define kSystemVersion [[UIDevice currentDevice] systemVersion]
+//获取当前语言
+#define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+//判断是否为iPhone
+#define kIsiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//判断是否为iPad
+#define kIsiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+//判断是否为横屏
+#define kIsLandscape ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+//获取沙盒Document路径
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒temp路径
+#define kTempPath NSTemporaryDirectory()
+//获取沙盒Cache路径
+#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+// 5.判断系统版本
+#define kiOS6OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 6.0)
+#define kiOS7OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define kiOS8OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define kiOS9OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+#define kiOS10OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 10.0)
+#define kiOS11OrLater ([[UIDevice currentDevice].systemVersion doubleValue] >= 11.0)
+
+// 6.判断手机型号
+#define kIsiPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 7.测试的时候打印语句，发布程序的时候自动去除打印语句
+#ifdef DEBUG
+#define NSLog(...)  NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+// 8.other
+#define kReduceButtonFrequency sender.userInteractionEnabled = NO;\
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.75 * NSEC_PER_SEC)),\
+dispatch_get_main_queue(), ^{\
+sender.userInteractionEnabled = YES;\
+});
+
+#pragma mark - url
+
+#define kBaseUrl @"http://192.168.2.242:8088/block-chain-purse/"
+//#define kBaseUrl @"http://192.168.2.28:8080/block-chain-purse/"
+
+#define kPurseUserPurseUserRegister @"purseUser/purseUserRegister.dx"       // 钱包注册
+#define kPurseUserPurseUserLogin @"purseUser/purseUserLogin.dx"             // 钱包登录
+#define kPurseUserUploadUserPhoto @"purseUser/uploadUserPhoto.dx"           //上传头像
+
+#define kPurseAmountQueryPurseAmount @"purseAmount/queryPurseAmount.dx"     // 金额查询
+
+#pragma mark - import
+
+#ifdef __OBJC__ // 引用到oc文件
+ 
+#import <YYCategories.h>
+#import <SVProgressHUD.h>
+#import <YYModel.h>
+#import <Masonry.h>
+#import "WRCustomNavigationBar.h"
+#import "NetworkManager.h"
+
+#else
+#endif
+
+#endif 
