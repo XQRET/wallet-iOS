@@ -11,6 +11,9 @@
 
 @interface TransferAassetsController ()
 @property (nonatomic, strong) WRCustomNavigationBar *customNavBar;
+
+@property (weak, nonatomic) IBOutlet UIView *selectView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *selectViewHeightConstraint;
 @end
 
 @implementation TransferAassetsController
@@ -19,12 +22,9 @@
     [super viewDidLoad];
     [self setupNavBar];
     
-//    [_selectView1.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
-//    _selectView1.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
-//    _selectView1.layer.borderWidth = 1;
-//    _selectView1.hidden = YES;
-   
-    
+    [_selectView.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
+    _selectView.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView.layer.borderWidth = 1; 
 }
 
 - (void)setupNavBar {
@@ -43,5 +43,27 @@
     [self.view endEditing:YES];
 }
 
+- (IBAction)clickConversion:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    
+    [self changeView:_selectView willDisplay:sender.selected forHeightConstraint:_selectViewHeightConstraint];
+}
+
+- (void)changeView:(UIView *)v willDisplay:(BOOL)display forHeightConstraint:(NSLayoutConstraint *)constraint {
+    if (display) {
+        constraint.constant = 90;
+        [UIView animateWithDuration: 0.75 delay: 0 usingSpringWithDamping: 0.5 initialSpringVelocity: 5 options: UIViewAnimationOptionCurveEaseInOut  animations:^{
+            [v layoutIfNeeded];
+            v.alpha = 1;
+        } completion:nil];
+    } else {
+        constraint.constant = 0;
+        [UIView animateWithDuration: 0.75 delay: 0 usingSpringWithDamping: 0.5 initialSpringVelocity: 5 options: UIViewAnimationOptionCurveEaseInOut  animations:^{
+            [v layoutIfNeeded];
+            v.alpha = 0;
+        } completion:nil];
+    }
+    
+}
 
 @end

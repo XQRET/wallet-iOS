@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-Z2-nQY">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-Z2-nQY">
                                 <rect key="frame" x="305" y="121" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="ZAR-0l-Y1W"/>
@@ -51,8 +51,11 @@
                                 <state key="normal" title="ETH" image="down_j">
                                     <color key="titleColor" red="0.19215686274509802" green="0.50588235294117645" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickConversion:" destination="Fdf-3F-ko2" eventType="touchUpInside" id="sKi-dh-UGc"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转岀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svy-Xl-8NW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svy-Xl-8NW">
                                 <rect key="frame" x="20" y="177" width="37" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="1" id="aXm-pt-rkG"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入转岀RET数量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wI5-uy-rvE">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入转入RET数量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wI5-uy-rvE">
                                 <rect key="frame" x="20" y="199" width="275" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZWJ-GE-WnX"/>
@@ -73,7 +76,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUL-ZN-8Qg">
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUL-ZN-8Qg">
                                 <rect key="frame" x="305" y="204" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="xuZ-Ww-H5P"/>
@@ -84,6 +87,9 @@
                                 <state key="normal" title="ETH" image="down_j">
                                     <color key="titleColor" red="0.19215686269999999" green="0.50588235290000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickConversion:" destination="Fdf-3F-ko2" eventType="touchUpInside" id="fCw-C2-eQk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-WZ-AOg">
                                 <rect key="frame" x="289" y="256" width="66" height="32"/>
@@ -101,7 +107,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-MP-U45">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-MP-U45">
                                 <rect key="frame" x="235" y="157" width="120" height="0.0"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itV-eW-Sru">
@@ -134,7 +140,7 @@
                                     <constraint firstItem="itV-eW-Sru" firstAttribute="leading" secondItem="zuI-MP-U45" secondAttribute="leading" id="mr3-om-h0e"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNQ-8v-n6b">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNQ-8v-n6b">
                                 <rect key="frame" x="235" y="242" width="120" height="0.0"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQO-MB-oAe">
@@ -204,6 +210,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="KcA-UD-0Ri"/>
                     <connections>
+                        <outlet property="selectBtn1" destination="Wya-Z2-nQY" id="PUI-a9-Lmi"/>
+                        <outlet property="selectBtn2" destination="pUL-ZN-8Qg" id="RUi-0g-xOi"/>
                         <outlet property="selectView1" destination="zuI-MP-U45" id="qao-PR-Q6i"/>
                         <outlet property="selectView2" destination="yNQ-8v-n6b" id="Rhf-A0-Lja"/>
                         <outlet property="selectViewHeightConstraint1" destination="Lt3-L2-Ykb" id="EPL-CQ-qL6"/>
@@ -212,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OfB-2J-KQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304.8" y="-45.42728635682159"/>
+            <point key="canvasLocation" x="994" y="-46"/>
         </scene>
     </scenes>
     <resources>

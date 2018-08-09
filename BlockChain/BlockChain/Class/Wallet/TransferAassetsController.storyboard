@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,6 +81,9 @@
                                 <state key="normal" title="ETH" image="down_j">
                                     <color key="titleColor" red="0.19215686269999999" green="0.50588235290000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickConversion:" destination="m36-sb-VBH" eventType="touchUpInside" id="ee5-Jh-YXJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手续费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVj-wl-RXl">
                                 <rect key="frame" x="19.999999999999996" y="284" width="55.666666666666657" height="22"/>
@@ -115,6 +119,39 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gM-B6-CUO">
+                                <rect key="frame" x="255" y="264" width="120" height="0.0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-ot-x7X">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="RET">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-Jf-eLp">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="ETH">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Vf-ot-x7X" secondAttribute="trailing" id="1n4-eu-kMY"/>
+                                    <constraint firstAttribute="height" id="4JU-xN-Xa4"/>
+                                    <constraint firstItem="f4N-Jf-eLp" firstAttribute="height" secondItem="8gM-B6-CUO" secondAttribute="height" multiplier="0.5" id="5Yg-9n-1mN"/>
+                                    <constraint firstItem="f4N-Jf-eLp" firstAttribute="top" secondItem="1Vf-ot-x7X" secondAttribute="bottom" id="8Qg-d5-ATp"/>
+                                    <constraint firstAttribute="bottom" secondItem="f4N-Jf-eLp" secondAttribute="bottom" id="Bs5-pp-247"/>
+                                    <constraint firstItem="f4N-Jf-eLp" firstAttribute="leading" secondItem="8gM-B6-CUO" secondAttribute="leading" id="GE5-ax-tHL"/>
+                                    <constraint firstItem="1Vf-ot-x7X" firstAttribute="height" secondItem="8gM-B6-CUO" secondAttribute="height" multiplier="0.5" id="OOc-Jc-c4Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="f4N-Jf-eLp" secondAttribute="trailing" id="TNV-hJ-HtX"/>
+                                    <constraint firstItem="1Vf-ot-x7X" firstAttribute="top" secondItem="8gM-B6-CUO" secondAttribute="top" id="b0g-12-1TW"/>
+                                    <constraint firstItem="1Vf-ot-x7X" firstAttribute="leading" secondItem="8gM-B6-CUO" secondAttribute="leading" id="jQB-ir-UV1"/>
+                                    <constraint firstAttribute="width" constant="120" id="odc-8r-S3m"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -127,6 +164,7 @@
                             <constraint firstItem="2Yf-eJ-XB4" firstAttribute="top" secondItem="mDp-mf-oCm" secondAttribute="top" constant="74" id="DS3-ts-ZA9"/>
                             <constraint firstItem="onj-Ni-Mbw" firstAttribute="leading" secondItem="TVj-wl-RXl" secondAttribute="leading" id="EYs-9F-0uB"/>
                             <constraint firstItem="onj-Ni-Mbw" firstAttribute="top" secondItem="TVj-wl-RXl" secondAttribute="bottom" id="Exz-TS-z8d"/>
+                            <constraint firstItem="8gM-B6-CUO" firstAttribute="top" secondItem="gra-WD-n1p" secondAttribute="bottom" id="Lw5-r1-ENU"/>
                             <constraint firstItem="ZWX-Jo-CeN" firstAttribute="trailing" secondItem="ufE-DW-IUN" secondAttribute="trailing" id="MgY-2K-H3A"/>
                             <constraint firstItem="jKR-PL-R0p" firstAttribute="centerY" secondItem="xT1-Aa-rLt" secondAttribute="centerY" id="MxA-zh-2xb"/>
                             <constraint firstItem="hZB-Jh-bua" firstAttribute="leading" secondItem="xT1-Aa-rLt" secondAttribute="leading" id="OxE-sm-pAb"/>
@@ -137,6 +175,7 @@
                             <constraint firstItem="gra-WD-n1p" firstAttribute="top" secondItem="CiZ-ZD-TSK" secondAttribute="bottom" id="XSJ-rZ-c4k"/>
                             <constraint firstItem="GQu-0u-1jG" firstAttribute="leading" secondItem="onj-Ni-Mbw" secondAttribute="leading" id="XUh-JX-Dng"/>
                             <constraint firstItem="ufE-DW-IUN" firstAttribute="leading" secondItem="CiZ-ZD-TSK" secondAttribute="trailing" constant="10" id="Xxk-Iw-c38"/>
+                            <constraint firstItem="8gM-B6-CUO" firstAttribute="trailing" secondItem="gra-WD-n1p" secondAttribute="trailing" id="cRj-3v-6jU"/>
                             <constraint firstItem="uAz-o8-baQ" firstAttribute="top" secondItem="GQu-0u-1jG" secondAttribute="bottom" constant="16" id="ch3-pa-hNJ"/>
                             <constraint firstItem="TVj-wl-RXl" firstAttribute="top" secondItem="gra-WD-n1p" secondAttribute="bottom" constant="20" id="dcy-oT-zDT"/>
                             <constraint firstItem="TVj-wl-RXl" firstAttribute="leading" secondItem="z86-zm-mxY" secondAttribute="leading" id="eyP-tH-Nwy"/>
@@ -154,6 +193,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mDp-mf-oCm"/>
                     </view>
+                    <connections>
+                        <outlet property="selectView" destination="8gM-B6-CUO" id="FWt-M9-jtw"/>
+                        <outlet property="selectViewHeightConstraint" destination="4JU-xN-Xa4" id="dEP-kM-mg8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUq-ZA-4RP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
