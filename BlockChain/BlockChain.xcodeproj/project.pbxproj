@@ -20,6 +20,7 @@
 		492E179B211C36B000632DBA /* SetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E179A211C36B000632DBA /* SetPasswordController.m */; };
 		492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492E179C211C36BF00632DBA /* SetPasswordController.storyboard */; };
 		492E17A3211C3F0100632DBA /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E17A2211C3F0100632DBA /* PasswordView.m */; };
+		492E17A5211D94BF00632DBA /* ShoppingCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492E17A4211D94BF00632DBA /* ShoppingCart.xib */; };
 		65126D3121105D7200EAE232 /* TransferAassetsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */; };
 		65126D3421105D7F00EAE232 /* TransferAassetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65126D3321105D7F00EAE232 /* TransferAassetsController.m */; };
 		65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65129C0B20FD9DFE0025CAD0 /* AccountSecurityController.storyboard */; };
@@ -74,6 +75,7 @@
 		492E179C211C36BF00632DBA /* SetPasswordController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPasswordController.storyboard; sourceTree = "<group>"; };
 		492E17A1211C3F0100632DBA /* PasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
 		492E17A2211C3F0100632DBA /* PasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
+		492E17A4211D94BF00632DBA /* ShoppingCart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCart.xib; sourceTree = "<group>"; };
 		58305DEF9A355FC17B466CA4 /* Pods-BlockChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockChain/Pods-BlockChain.release.xcconfig"; sourceTree = "<group>"; };
 		5C5B33C627DE6361FB0ECE56 /* libPods-BlockChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferAassetsController.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				492E179C211C36BF00632DBA /* SetPasswordController.storyboard */,
 				492E17A1211C3F0100632DBA /* PasswordView.h */,
 				492E17A2211C3F0100632DBA /* PasswordView.m */,
+				492E17A4211D94BF00632DBA /* ShoppingCart.xib */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				490F576A2111ED770003E9A3 /* AssetsTableController.storyboard in Resources */,
 				492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */,
 				65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */,
+				492E17A5211D94BF00632DBA /* ShoppingCart.xib in Resources */,
 				65274B2721031C03003130A0 /* RegisterController.storyboard in Resources */,
 				652F996820F5FEED00FFAD0A /* LaunchScreen.storyboard in Resources */,
 				65274B25210312FE003130A0 /* LoginController.storyboard in Resources */,

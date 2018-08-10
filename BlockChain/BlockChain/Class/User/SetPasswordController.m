@@ -40,6 +40,16 @@
     [self.customNavBar updateFrame];
 }
 
+- (IBAction)clickBtn:(UIButton *)sender {
+    
+     UIView *v = [[UINib nibWithNibName:@"ShoppingCart" bundle:nil] instantiateWithOwner:nil options:nil].firstObject;
+    [self.view addSubview:v];
+    [v mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.left.right.bottom.equalTo(self.view);
+    }];
+}
+
+
 #pragma mark PasswordView Delegate
 -(void)passWordDidChange:(PasswordView *)password
 {
