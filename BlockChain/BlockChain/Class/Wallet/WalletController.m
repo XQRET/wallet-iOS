@@ -6,7 +6,7 @@
 //  Copyright © 2018年 cn.nbs.block-chain. All rights reserved.
 //
 
-#import "WalletController.h"
+#import "WalletController.h" 
 
 #define kSubviewWidth (kScreenWidth - 30)
 
@@ -249,7 +249,8 @@
 
 - (void)clickTransferAassets:(UIButton *)sender {
     kReduceButtonFrequency
-    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
+//    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"SetPasswordController" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

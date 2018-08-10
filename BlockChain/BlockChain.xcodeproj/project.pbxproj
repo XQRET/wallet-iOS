@@ -17,6 +17,9 @@
 		490F57722112F6550003E9A3 /* AssetsDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F57712112F6550003E9A3 /* AssetsDetailsController.m */; };
 		490F577421133A210003E9A3 /* AssetsBuyController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490F577321133A210003E9A3 /* AssetsBuyController.storyboard */; };
 		490F57772113407D0003E9A3 /* AssetsBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F57762113407D0003E9A3 /* AssetsBuyController.m */; };
+		492E179B211C36B000632DBA /* SetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E179A211C36B000632DBA /* SetPasswordController.m */; };
+		492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492E179C211C36BF00632DBA /* SetPasswordController.storyboard */; };
+		492E17A3211C3F0100632DBA /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E17A2211C3F0100632DBA /* PasswordView.m */; };
 		65126D3121105D7200EAE232 /* TransferAassetsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */; };
 		65126D3421105D7F00EAE232 /* TransferAassetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65126D3321105D7F00EAE232 /* TransferAassetsController.m */; };
 		65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65129C0B20FD9DFE0025CAD0 /* AccountSecurityController.storyboard */; };
@@ -66,6 +69,11 @@
 		490F577321133A210003E9A3 /* AssetsBuyController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AssetsBuyController.storyboard; sourceTree = "<group>"; };
 		490F57752113407D0003E9A3 /* AssetsBuyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsBuyController.h; sourceTree = "<group>"; };
 		490F57762113407D0003E9A3 /* AssetsBuyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsBuyController.m; sourceTree = "<group>"; };
+		492E1799211C36B000632DBA /* SetPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPasswordController.h; sourceTree = "<group>"; };
+		492E179A211C36B000632DBA /* SetPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordController.m; sourceTree = "<group>"; };
+		492E179C211C36BF00632DBA /* SetPasswordController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPasswordController.storyboard; sourceTree = "<group>"; };
+		492E17A1211C3F0100632DBA /* PasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
+		492E17A2211C3F0100632DBA /* PasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
 		58305DEF9A355FC17B466CA4 /* Pods-BlockChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockChain/Pods-BlockChain.release.xcconfig"; sourceTree = "<group>"; };
 		5C5B33C627DE6361FB0ECE56 /* libPods-BlockChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferAassetsController.storyboard; sourceTree = "<group>"; };
@@ -175,6 +183,11 @@
 				65F804832107298400979713 /* RegisterController.h */,
 				65F804842107298400979713 /* RegisterController.m */,
 				65274B2621031C03003130A0 /* RegisterController.storyboard */,
+				492E1799211C36B000632DBA /* SetPasswordController.h */,
+				492E179A211C36B000632DBA /* SetPasswordController.m */,
+				492E179C211C36BF00632DBA /* SetPasswordController.storyboard */,
+				492E17A1211C3F0100632DBA /* PasswordView.h */,
+				492E17A2211C3F0100632DBA /* PasswordView.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -420,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490F576A2111ED770003E9A3 /* AssetsTableController.storyboard in Resources */,
+				492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */,
 				65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */,
 				65274B2721031C03003130A0 /* RegisterController.storyboard in Resources */,
 				652F996820F5FEED00FFAD0A /* LaunchScreen.storyboard in Resources */,
@@ -500,11 +514,13 @@
 				652F995D20F5FEEB00FFAD0A /* AppDelegate.m in Sources */,
 				659CBA51210F048500285D05 /* ExchangeCurrencyController.m in Sources */,
 				65C343F82109BC5D0041A784 /* NSSet+Log.m in Sources */,
+				492E17A3211C3F0100632DBA /* PasswordView.m in Sources */,
 				65F8048C2107439100979713 /* NetworkManager.m in Sources */,
 				652F997B20F604E400FFAD0A /* MainNavigationController.m in Sources */,
 				659CBA4C210EF72D00285D05 /* AuthorizationManager.m in Sources */,
 				65F804852107298400979713 /* RegisterController.m in Sources */,
 				65976D0220F6F9EC0042C8C9 /* WRCustomNavigationBar.m in Sources */,
+				492E179B211C36B000632DBA /* SetPasswordController.m in Sources */,
 				652F997820F604D000FFAD0A /* MainTabBarController.m in Sources */,
 				65524CD621002CC2001A784B /* AppConfigController.m in Sources */,
 			);
