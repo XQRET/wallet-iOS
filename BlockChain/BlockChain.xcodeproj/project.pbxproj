@@ -21,6 +21,11 @@
 		492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492E179C211C36BF00632DBA /* SetPasswordController.storyboard */; };
 		492E17A3211C3F0100632DBA /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E17A2211C3F0100632DBA /* PasswordView.m */; };
 		492E17A5211D94BF00632DBA /* ShoppingCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492E17A4211D94BF00632DBA /* ShoppingCart.xib */; };
+		4942D1752122C825006B2816 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D1742122C825006B2816 /* ShoppingCart.m */; };
+		4942D17A2122DD65006B2816 /* YWGesturesUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D1792122DD65006B2816 /* YWGesturesUnlockView.m */; };
+		4942D17F2122DE58006B2816 /* YWUnlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4942D17C2122DE57006B2816 /* YWUnlockView.xib */; };
+		4942D1802122DE58006B2816 /* YWUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D17E2122DE57006B2816 /* YWUnlockView.m */; };
+		4942D1832122E1B6006B2816 /* YWUnlockPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D1822122E1B6006B2816 /* YWUnlockPreviewView.m */; };
 		65126D3121105D7200EAE232 /* TransferAassetsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */; };
 		65126D3421105D7F00EAE232 /* TransferAassetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65126D3321105D7F00EAE232 /* TransferAassetsController.m */; };
 		65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65129C0B20FD9DFE0025CAD0 /* AccountSecurityController.storyboard */; };
@@ -76,6 +81,16 @@
 		492E17A1211C3F0100632DBA /* PasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
 		492E17A2211C3F0100632DBA /* PasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
 		492E17A4211D94BF00632DBA /* ShoppingCart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCart.xib; sourceTree = "<group>"; };
+		4942D1732122C825006B2816 /* ShoppingCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
+		4942D1742122C825006B2816 /* ShoppingCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
+		4942D1782122DD65006B2816 /* YWGesturesUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWGesturesUnlockView.h; sourceTree = "<group>"; };
+		4942D1792122DD65006B2816 /* YWGesturesUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWGesturesUnlockView.m; sourceTree = "<group>"; };
+		4942D17B2122DD8D006B2816 /* YWUnlockMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWUnlockMacros.h; sourceTree = "<group>"; };
+		4942D17C2122DE57006B2816 /* YWUnlockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWUnlockView.xib; sourceTree = "<group>"; };
+		4942D17D2122DE57006B2816 /* YWUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWUnlockView.h; sourceTree = "<group>"; };
+		4942D17E2122DE57006B2816 /* YWUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWUnlockView.m; sourceTree = "<group>"; };
+		4942D1812122E1B6006B2816 /* YWUnlockPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWUnlockPreviewView.h; sourceTree = "<group>"; };
+		4942D1822122E1B6006B2816 /* YWUnlockPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWUnlockPreviewView.m; sourceTree = "<group>"; };
 		58305DEF9A355FC17B466CA4 /* Pods-BlockChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockChain/Pods-BlockChain.release.xcconfig"; sourceTree = "<group>"; };
 		5C5B33C627DE6361FB0ECE56 /* libPods-BlockChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlockChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65126D3021105D7200EAE232 /* TransferAassetsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferAassetsController.storyboard; sourceTree = "<group>"; };
@@ -151,6 +166,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4942D1762122DCBB006B2816 /* PasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				492E17A1211C3F0100632DBA /* PasswordView.h */,
+				492E17A2211C3F0100632DBA /* PasswordView.m */,
+			);
+			path = PasswordView;
+			sourceTree = "<group>";
+		};
+		4942D1772122DCCB006B2816 /* YWUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				4942D17B2122DD8D006B2816 /* YWUnlockMacros.h */,
+				4942D17D2122DE57006B2816 /* YWUnlockView.h */,
+				4942D17E2122DE57006B2816 /* YWUnlockView.m */,
+				4942D17C2122DE57006B2816 /* YWUnlockView.xib */,
+				4942D1782122DD65006B2816 /* YWGesturesUnlockView.h */,
+				4942D1792122DD65006B2816 /* YWGesturesUnlockView.m */,
+				4942D1812122E1B6006B2816 /* YWUnlockPreviewView.h */,
+				4942D1822122E1B6006B2816 /* YWUnlockPreviewView.m */,
+			);
+			path = YWUnlock;
+			sourceTree = "<group>";
+		};
 		65126D35211078F300EAE232 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +227,8 @@
 				492E1799211C36B000632DBA /* SetPasswordController.h */,
 				492E179A211C36B000632DBA /* SetPasswordController.m */,
 				492E179C211C36BF00632DBA /* SetPasswordController.storyboard */,
-				492E17A1211C3F0100632DBA /* PasswordView.h */,
-				492E17A2211C3F0100632DBA /* PasswordView.m */,
+				4942D1732122C825006B2816 /* ShoppingCart.h */,
+				4942D1742122C825006B2816 /* ShoppingCart.m */,
 				492E17A4211D94BF00632DBA /* ShoppingCart.xib */,
 			);
 			path = User;
@@ -313,6 +352,8 @@
 		65976CFB20F6F9550042C8C9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				4942D1772122DCCB006B2816 /* YWUnlock */,
+				4942D1762122DCBB006B2816 /* PasswordView */,
 				659CBA4B210EF72D00285D05 /* AuthorizationManager.h */,
 				659CBA49210EF72D00285D05 /* AuthorizationManager.m */,
 				65C343FC2109BC690041A784 /* Log */,
@@ -443,6 +484,7 @@
 				652F996820F5FEED00FFAD0A /* LaunchScreen.storyboard in Resources */,
 				65274B25210312FE003130A0 /* LoginController.storyboard in Resources */,
 				490F576F2112EDCF0003E9A3 /* AssetsDetailsController.storyboard in Resources */,
+				4942D17F2122DE58006B2816 /* YWUnlockView.xib in Resources */,
 				65CD2A5F20FC3FDB00EA9646 /* MineController.storyboard in Resources */,
 				6551FBC62105D8EA002871F3 /* AssetsViewController.storyboard in Resources */,
 				659CBA53210F04F200285D05 /* ExchangeCurrencyController.storyboard in Resources */,
@@ -505,6 +547,7 @@
 				490F576D2112A43A0003E9A3 /* AssetsTableController.m in Sources */,
 				65C343F92109BC5D0041A784 /* NSDictionary+Log.m in Sources */,
 				65129C0F20FDA28A0025CAD0 /* AccountSecurityController.m in Sources */,
+				4942D17A2122DD65006B2816 /* YWGesturesUnlockView.m in Sources */,
 				652F996B20F5FEEE00FFAD0A /* main.m in Sources */,
 				490F57682111E5D90003E9A3 /* AvailableAssetsController.m in Sources */,
 				65C343FA2109BC5D0041A784 /* NSArray+Log.m in Sources */,
@@ -513,8 +556,10 @@
 				65976D0120F6F9EC0042C8C9 /* WRNavigationBar.m in Sources */,
 				65126D3421105D7F00EAE232 /* TransferAassetsController.m in Sources */,
 				653020362101E1E800009DC7 /* AssetsViewController.m in Sources */,
+				4942D1832122E1B6006B2816 /* YWUnlockPreviewView.m in Sources */,
 				65F804882107299500979713 /* LoginController.m in Sources */,
 				490F57772113407D0003E9A3 /* AssetsBuyController.m in Sources */,
+				4942D1802122DE58006B2816 /* YWUnlockView.m in Sources */,
 				652F995D20F5FEEB00FFAD0A /* AppDelegate.m in Sources */,
 				659CBA51210F048500285D05 /* ExchangeCurrencyController.m in Sources */,
 				65C343F82109BC5D0041A784 /* NSSet+Log.m in Sources */,
@@ -523,6 +568,7 @@
 				652F997B20F604E400FFAD0A /* MainNavigationController.m in Sources */,
 				659CBA4C210EF72D00285D05 /* AuthorizationManager.m in Sources */,
 				65F804852107298400979713 /* RegisterController.m in Sources */,
+				4942D1752122C825006B2816 /* ShoppingCart.m in Sources */,
 				65976D0220F6F9EC0042C8C9 /* WRCustomNavigationBar.m in Sources */,
 				492E179B211C36B000632DBA /* SetPasswordController.m in Sources */,
 				652F997820F604D000FFAD0A /* MainTabBarController.m in Sources */,

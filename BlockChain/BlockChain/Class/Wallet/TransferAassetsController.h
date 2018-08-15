@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger, CurrencyType) {
+    CurrencyTypeRET = 11,
+    CurrencyTypeETH = 12
+};
 
 @interface TransferAassetsController : UIViewController
 

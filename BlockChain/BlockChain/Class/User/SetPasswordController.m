@@ -27,6 +27,7 @@
 - (void)setupUI {
     _passwordView.delegate = self;
     [self setupNavBar];
+//    [_passwordView becomeFirstResponder];
 }
 
 - (void)setupNavBar {
@@ -45,7 +46,14 @@
      UIView *v = [[UINib nibWithNibName:@"ShoppingCart" bundle:nil] instantiateWithOwner:nil options:nil].firstObject;
     [self.view addSubview:v];
     [v mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.left.right.bottom.equalTo(self.view);
+        make.height.left.right.equalTo(self.view);
+        make.bottom.equalTo(self.view).mas_offset(kScreenHeight);
+    }];
+    
+    [UIView animateWithDuration:0.75 animations:^{
+        [v mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self.view).mas_offset(0);
+        }];
     }];
 }
 

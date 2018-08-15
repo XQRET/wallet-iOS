@@ -6,7 +6,8 @@
 //  Copyright © 2018年 cn.nbs.block-chain. All rights reserved.
 //
 
-#import "WalletController.h" 
+#import "WalletController.h"
+#import "YWUnlockView.h"
 
 #define kSubviewWidth (kScreenWidth - 30)
 
@@ -249,15 +250,18 @@
 
 - (void)clickTransferAassets:(UIButton *)sender {
     kReduceButtonFrequency
-//    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"SetPasswordController" bundle:nil] instantiateInitialViewController];
+    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
+//    UIViewController *vc = [[UIStoryboard storyboardWithName:@"SetPasswordController" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)clickReceivables:(UIButton *)sender {
     kReduceButtonFrequency
-    UIViewController *vc= [[UIStoryboard storyboardWithName:@"ReceivablesController" bundle:nil] instantiateInitialViewController];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc= [[UIStoryboard storyboardWithName:@"ReceivablesController" bundle:nil] instantiateInitialViewController];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [YWUnlockView showUnlockViewWithType:YWUnlockViewCreate callBack:^(BOOL result) {
+        
+    }];
 }
 
 - (void)clickExchangeCurrency:(UIButton *)sender {

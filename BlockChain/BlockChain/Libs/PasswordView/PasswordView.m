@@ -10,7 +10,7 @@
 IB_DESIGNABLE
 @implementation PasswordView
 
--(instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self setupUI];
@@ -32,7 +32,7 @@ IB_DESIGNABLE
     self.pointRadius = 6;
     self.rectColor = kHexColor(0x949494);
     self.pointColor = [UIColor blackColor];
-    [self becomeFirstResponder];
+//    [self becomeFirstResponder];
     
     self.layer.borderColor = kHexColor(0x949494).CGColor;
     self.layer.borderWidth = 1;
