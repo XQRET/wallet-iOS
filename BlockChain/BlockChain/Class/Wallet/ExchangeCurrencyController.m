@@ -26,12 +26,12 @@
     [self setupNavBar];
     
     [_selectView1.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
-    _selectView1.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView1.layer.borderColor = kHexColor(0xe5e7e9).CGColor;
     _selectView1.layer.borderWidth = 1;
     _selectView1.alpha = 1;
     
     [_selectView2.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
-    _selectView2.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView2.layer.borderColor = kHexColor(0xe5e7e9).CGColor;
     _selectView2.layer.borderWidth = 1;
     _selectView2.alpha = 0;
     

@@ -89,8 +89,6 @@
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
-    [self setupNavBar];
-    
     
     if (kScreenHeight == 812) {
         self.tableView.tableHeaderView.height = 189;
@@ -98,6 +96,8 @@
         self.tableView.tableHeaderView.height = 165;
     }
     
+    [self setupNavBar];
+ 
     self.top_right_btn.layer.borderColor = [UIColor whiteColor].CGColor;
     self.top_right_btn.layer.borderWidth = 1;
     self.top_right_btn.layer.cornerRadius = 5;

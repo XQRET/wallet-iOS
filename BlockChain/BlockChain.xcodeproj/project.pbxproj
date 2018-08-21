@@ -17,10 +17,18 @@
 		490F57722112F6550003E9A3 /* AssetsDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F57712112F6550003E9A3 /* AssetsDetailsController.m */; };
 		490F577421133A210003E9A3 /* AssetsBuyController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490F577321133A210003E9A3 /* AssetsBuyController.storyboard */; };
 		490F57772113407D0003E9A3 /* AssetsBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490F57762113407D0003E9A3 /* AssetsBuyController.m */; };
+		49116C2221252CAC007EBC01 /* BackupMnemonicsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49116C2121252CAC007EBC01 /* BackupMnemonicsController.storyboard */; };
+		49116C2521252F6D007EBC01 /* BackupMnemonicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49116C2421252F6D007EBC01 /* BackupMnemonicsController.m */; };
+		49116C2721255ECD007EBC01 /* ConfirmMnemonicsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49116C2621255ECD007EBC01 /* ConfirmMnemonicsController.storyboard */; };
+		49116C2A21255EDF007EBC01 /* ConfirmMnemonicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49116C2921255EDF007EBC01 /* ConfirmMnemonicsController.m */; };
 		492E179B211C36B000632DBA /* SetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E179A211C36B000632DBA /* SetPasswordController.m */; };
 		492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492E179C211C36BF00632DBA /* SetPasswordController.storyboard */; };
 		492E17A3211C3F0100632DBA /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E17A2211C3F0100632DBA /* PasswordView.m */; };
 		492E17A5211D94BF00632DBA /* ShoppingCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492E17A4211D94BF00632DBA /* ShoppingCart.xib */; };
+		493DB09F212AAB3F00CFA28A /* ImportWalletController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DB09E212AAB3F00CFA28A /* ImportWalletController.storyboard */; };
+		493DB0A2212AB04100CFA28A /* ImportWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DB0A1212AB04100CFA28A /* ImportWalletController.m */; };
+		493DB0A4212AC12C00CFA28A /* ImportFormController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DB0A3212AC12C00CFA28A /* ImportFormController.storyboard */; };
+		493DB0A7212AC2D200CFA28A /* ImportFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DB0A6212AC2D200CFA28A /* ImportFormController.m */; };
 		4942D1752122C825006B2816 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D1742122C825006B2816 /* ShoppingCart.m */; };
 		4942D17A2122DD65006B2816 /* YWGesturesUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942D1792122DD65006B2816 /* YWGesturesUnlockView.m */; };
 		4942D17F2122DE58006B2816 /* YWUnlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4942D17C2122DE57006B2816 /* YWUnlockView.xib */; };
@@ -75,12 +83,24 @@
 		490F577321133A210003E9A3 /* AssetsBuyController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AssetsBuyController.storyboard; sourceTree = "<group>"; };
 		490F57752113407D0003E9A3 /* AssetsBuyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsBuyController.h; sourceTree = "<group>"; };
 		490F57762113407D0003E9A3 /* AssetsBuyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsBuyController.m; sourceTree = "<group>"; };
+		49116C2121252CAC007EBC01 /* BackupMnemonicsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BackupMnemonicsController.storyboard; sourceTree = "<group>"; };
+		49116C2321252F6D007EBC01 /* BackupMnemonicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackupMnemonicsController.h; sourceTree = "<group>"; };
+		49116C2421252F6D007EBC01 /* BackupMnemonicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackupMnemonicsController.m; sourceTree = "<group>"; };
+		49116C2621255ECD007EBC01 /* ConfirmMnemonicsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmMnemonicsController.storyboard; sourceTree = "<group>"; };
+		49116C2821255EDF007EBC01 /* ConfirmMnemonicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmMnemonicsController.h; sourceTree = "<group>"; };
+		49116C2921255EDF007EBC01 /* ConfirmMnemonicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmMnemonicsController.m; sourceTree = "<group>"; };
 		492E1799211C36B000632DBA /* SetPasswordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPasswordController.h; sourceTree = "<group>"; };
 		492E179A211C36B000632DBA /* SetPasswordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPasswordController.m; sourceTree = "<group>"; };
 		492E179C211C36BF00632DBA /* SetPasswordController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPasswordController.storyboard; sourceTree = "<group>"; };
 		492E17A1211C3F0100632DBA /* PasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
 		492E17A2211C3F0100632DBA /* PasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
 		492E17A4211D94BF00632DBA /* ShoppingCart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCart.xib; sourceTree = "<group>"; };
+		493DB09E212AAB3F00CFA28A /* ImportWalletController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportWalletController.storyboard; sourceTree = "<group>"; };
+		493DB0A0212AB04100CFA28A /* ImportWalletController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportWalletController.h; sourceTree = "<group>"; };
+		493DB0A1212AB04100CFA28A /* ImportWalletController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportWalletController.m; sourceTree = "<group>"; };
+		493DB0A3212AC12C00CFA28A /* ImportFormController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportFormController.storyboard; sourceTree = "<group>"; };
+		493DB0A5212AC2D200CFA28A /* ImportFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportFormController.h; sourceTree = "<group>"; };
+		493DB0A6212AC2D200CFA28A /* ImportFormController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportFormController.m; sourceTree = "<group>"; };
 		4942D1732122C825006B2816 /* ShoppingCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
 		4942D1742122C825006B2816 /* ShoppingCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
 		4942D1782122DD65006B2816 /* YWGesturesUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWGesturesUnlockView.h; sourceTree = "<group>"; };
@@ -166,6 +186,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		493DB09D212AAAE000CFA28A /* WalletSetup */ = {
+			isa = PBXGroup;
+			children = (
+				493DB0A0212AB04100CFA28A /* ImportWalletController.h */,
+				493DB0A1212AB04100CFA28A /* ImportWalletController.m */,
+				493DB09E212AAB3F00CFA28A /* ImportWalletController.storyboard */,
+				493DB0A5212AC2D200CFA28A /* ImportFormController.h */,
+				493DB0A6212AC2D200CFA28A /* ImportFormController.m */,
+				493DB0A3212AC12C00CFA28A /* ImportFormController.storyboard */,
+				49116C2321252F6D007EBC01 /* BackupMnemonicsController.h */,
+				49116C2421252F6D007EBC01 /* BackupMnemonicsController.m */,
+				49116C2121252CAC007EBC01 /* BackupMnemonicsController.storyboard */,
+				49116C2821255EDF007EBC01 /* ConfirmMnemonicsController.h */,
+				49116C2921255EDF007EBC01 /* ConfirmMnemonicsController.m */,
+				49116C2621255ECD007EBC01 /* ConfirmMnemonicsController.storyboard */,
+			);
+			path = WalletSetup;
+			sourceTree = "<group>";
+		};
 		4942D1762122DCBB006B2816 /* PasswordView */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +257,7 @@
 		65274B2321031244003130A0 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				493DB09D212AAAE000CFA28A /* WalletSetup */,
 				65F804862107299500979713 /* LoginController.h */,
 				65F804872107299500979713 /* LoginController.m */,
 				65274B24210312FE003130A0 /* LoginController.storyboard */,
@@ -476,10 +516,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493DB0A4212AC12C00CFA28A /* ImportFormController.storyboard in Resources */,
 				490F576A2111ED770003E9A3 /* AssetsTableController.storyboard in Resources */,
+				49116C2721255ECD007EBC01 /* ConfirmMnemonicsController.storyboard in Resources */,
+				493DB09F212AAB3F00CFA28A /* ImportWalletController.storyboard in Resources */,
 				492E179D211C36BF00632DBA /* SetPasswordController.storyboard in Resources */,
 				65129C0C20FD9DFE0025CAD0 /* AccountSecurityController.storyboard in Resources */,
 				492E17A5211D94BF00632DBA /* ShoppingCart.xib in Resources */,
+				49116C2221252CAC007EBC01 /* BackupMnemonicsController.storyboard in Resources */,
 				65274B2721031C03003130A0 /* RegisterController.storyboard in Resources */,
 				652F996820F5FEED00FFAD0A /* LaunchScreen.storyboard in Resources */,
 				65274B25210312FE003130A0 /* LoginController.storyboard in Resources */,
@@ -543,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CD2A6220FC8BC600EA9646 /* MineController.m in Sources */,
+				493DB0A2212AB04100CFA28A /* ImportWalletController.m in Sources */,
 				490F57722112F6550003E9A3 /* AssetsDetailsController.m in Sources */,
 				490F576D2112A43A0003E9A3 /* AssetsTableController.m in Sources */,
 				65C343F92109BC5D0041A784 /* NSDictionary+Log.m in Sources */,
@@ -554,6 +599,7 @@
 				490F57632111D3660003E9A3 /* ReceivablesController.m in Sources */,
 				652F997E20F6095400FFAD0A /* WalletController.m in Sources */,
 				65976D0120F6F9EC0042C8C9 /* WRNavigationBar.m in Sources */,
+				493DB0A7212AC2D200CFA28A /* ImportFormController.m in Sources */,
 				65126D3421105D7F00EAE232 /* TransferAassetsController.m in Sources */,
 				653020362101E1E800009DC7 /* AssetsViewController.m in Sources */,
 				4942D1832122E1B6006B2816 /* YWUnlockPreviewView.m in Sources */,
@@ -567,6 +613,8 @@
 				65F8048C2107439100979713 /* NetworkManager.m in Sources */,
 				652F997B20F604E400FFAD0A /* MainNavigationController.m in Sources */,
 				659CBA4C210EF72D00285D05 /* AuthorizationManager.m in Sources */,
+				49116C2A21255EDF007EBC01 /* ConfirmMnemonicsController.m in Sources */,
+				49116C2521252F6D007EBC01 /* BackupMnemonicsController.m in Sources */,
 				65F804852107298400979713 /* RegisterController.m in Sources */,
 				4942D1752122C825006B2816 /* ShoppingCart.m in Sources */,
 				65976D0220F6F9EC0042C8C9 /* WRCustomNavigationBar.m in Sources */,

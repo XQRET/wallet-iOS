@@ -250,8 +250,8 @@
 
 - (void)clickTransferAassets:(UIButton *)sender {
     kReduceButtonFrequency
-    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
-//    UIViewController *vc = [[UIStoryboard storyboardWithName:@"SetPasswordController" bundle:nil] instantiateInitialViewController];
+//    UIViewController *vc= [[UIStoryboard storyboardWithName:@"TransferAassetsController" bundle:nil] instantiateInitialViewController];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"ImportWalletController" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

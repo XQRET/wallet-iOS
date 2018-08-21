@@ -28,7 +28,7 @@
     [self setupNavBar];
     
     [_selectView.layer setLayerShadow:kHexColor(0xe4e9ff) offset:CGSizeMake(0, 0) radius:5.f];
-    _selectView.layer.borderColor = kHexColor(0xe5e8e8).CGColor;
+    _selectView.layer.borderColor = kHexColor(0xe5e7e9).CGColor;
     _selectView.layer.borderWidth = 1;
     
     _currentCurrency = CurrencyTypeETH;
